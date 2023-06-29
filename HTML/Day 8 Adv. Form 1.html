@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="post">
+        <h2>Event Registration</h2>
+        <label for="name">Name : </label>
+        <br>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="mail">E-mail - </label>
+        <br>
+        <input type="email" name="mail" id="mail">
+        <br>
+        <br>
+        <label for="phone">Phone</label>
+        <br>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <br>
+        <label for="occupation">Occupation</label>
+        <br> 
+        <select name="occu" id="occupation">
+            <option value="">--Please choose an option--</option>
+            <option value="farmer">Farmer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Engineer">Engineer</option>
+        </select>
+        <br>
+        <br>
+
+        <fieldset >
+        <legend>Topic of Intrest :</legend>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="topic" id="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="topic" id="css">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" name="topic" id="js">
+        </fieldset>
+        <br>
+    
+        <label for="comment">Comments : </label>
+        <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+        <button type="submit">submit</button>
+
+
+
+
+    </form>
+</body>
+</html>
