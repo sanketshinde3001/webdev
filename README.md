@@ -1,2 +1,5 @@
-# webdev
-Sharing My Web Development Journey
+# Sharing My Web Development Journey
+
+## 1. Front End Development
+  - [x] HTML
+  - [ ]  CSS (Ongoing) 
