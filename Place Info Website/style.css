@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #fff;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    height: 130px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 145px;
+    gap: 50px;
+    position: fixed;
+    z-index: 99;
+
+}
+
+#nav img {
+    height: 100px;
+}
+
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 450;
+    color: white;
+}
+#cursor{
+    height: 25px;
+    /* background-color: #95c11E; */
+    /* border-radius: 50%; */
+    position: fixed;
+    z-index: 99;
+    pointer-events: none;
+    transition: all linear 0.4s;
+}
+#cblur{
+    background-color: #96c11e28;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: 9;
+    position: fixed;
+    filter: blur(50px);
+    z-index: 9;
+    pointer-events: none;
+    transition: all linear 0.4s;
+    
+}
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+  }
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+#page1{
+    height: 100vh;
+    width: 100;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   z-index: 10;
+    
+}
+
+#page1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    position: relative;
+}
+#page1 h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#page1 h1::before{
+    content: "BIODIVERSE. HISTORIC. HERITAGE.";
+    position: absolute;
+    color: black;
+    top: -5px;
+    left: -5px;
+    -webkit-text-stroke: 2px #95c11E;
+    z-index: -1;
+}
+#page1 p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 40%;
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#scroller {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller1{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+
+#scroller h4{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 140px;
+    font-weight: 900;
+    font-family: gillroy;
+    margin-right: 10px;
+    color: transparent;
+    transition: all linear 0.5s;
+    -webkit-text-stroke: 2px #95c11E;
+
+}
+
+#scroller h4:hover{
+    color: #95c11E;
+}
+
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+#about{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 15px; */
+    /* margin: 15px; */
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#about img{
+    height: 350px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 52px;
+    object-fit: cover;
+    z-index: 10;
+}
+#aboutinfo{
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+#aboutinfo h3,p {
+    text-align: center;
+    margin: 10px;
+    font-family: 'montserrat';
+    transition: all linear 0.5s;
+}
+#aboutinfo h3:hover{
+   color: #95c11E;
+
+}
+#aboutinfo p:hover{
+   color: #95c11E;
+}
+
+
+#aboutinfo h3 {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'montserrat';
+    margin-bottom: 40px;
+}
+#aboutinfo p {
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+    font-family: gillroy;
+    font-size: 20px;
+}
+
+#cardsrow{
+    /* background-color: red; */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap : 70px;
+    position: relative;
+}
+
+.cards
+{
+    height: 80%;
+    width: 20%;
+    background-color: black;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+
+#card1
+{
+    background-image: url(Data/card1.jpg) ;
+    z-index: 10;
+}
+#card2
+{
+    background-image: url(Data/card2.png) ;
+    z-index: 10;
+}
+#card3
+{
+    background-image: url(Data/card3.jpg) ;
+    z-index: 10;
+}
+
+.overlay
+{
+    height: 100%;
+    width: 100%;
+    background-color: #95c11E;
+    padding-top: 160px;
+    padding: 30px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.overlay h4{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    /* white-space: nowrap; */
+    margin-bottom: 20px;
+}
+
+.overlay p{
+    color: #000;
+    font-size: 18px;
+}
+
+.cards:hover .overlay{
+    opacity: 1;
+}
+
+#card1:hover{
+    transform: rotate3d(0,-1,0,25deg);
+}
+#card2:hover{
+    transform: rotate3d(1,0,0,20deg);
+}
+#card3:hover{
+    transform: rotate3d(0,1,0,25deg);
+}
+
+#banner{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #95c11E; */
+}
+
+#banner h4{
+    /* width: 45%; */
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: center;
+    
+
+}
+
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#page3 p{
+    font-size: 30px;
+    font-weight: 700;
+    width: 45%;
+    text-align: center;
+}
+
+#page3 img {
+    position: absolute;
+    height: 60px;
+
+}
+
+#page3 #q1 {
+    left:20%;
+    top: 20%;
+}
+
+#page3 #q2 {
+    right:20%;
+    bottom : 20%;
+}
+
+#page4 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+}
+
+.elem {
+    height: 70%;
+    width: 26%;
+    overflow: hidden;
+    position: relative;
+}
+
+.elem h2{
+    height: 100%;
+    width: 100%;
+    background-color: #95c11E;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50px;
+    transition: ease all 0.5s;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.elem:hover h2{
+    color: #fff;
+    background-color: transparent;
+}
