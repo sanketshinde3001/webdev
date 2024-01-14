@@ -2,4 +2,7 @@
 
 ## 1. Front End Development
   - [x] HTML
-  - [ ]  CSS (Ongoing) 
+  - [x] CSS
+  - [x] Responsive
+  - [x] Javascript
+  - [ ] React
