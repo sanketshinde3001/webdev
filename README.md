@@ -4,6 +4,6 @@
   - [x] HTML
   - [x] CSS
   - [x] Responsive
-  - [x] [GSAP](https://github.com/sanketshinde3001/webdev/tree/main/4%20Gsap%20-%20Basic%20To%20Advanced)
+  - [x] [GSAP](4%20Gsap%20-%20Basic%20To%20Advanced)
   - [x] Javascript
   - [ ] React
